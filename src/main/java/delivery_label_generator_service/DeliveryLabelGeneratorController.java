@@ -17,7 +17,8 @@ import java.io.StringReader;
 import java.util.ArrayList;
 
 /**
- * Created by cave on 2017.01.03..
+ *
+ * @since   2017-01-03
  */
 public class DeliveryLabelGeneratorController {
     private static final Logger logger = LoggerFactory.getLogger(DeliveryLabelGeneratorController.class);
@@ -26,7 +27,7 @@ public class DeliveryLabelGeneratorController {
     /**
      * Creating a list with the deliveries' JSONObjects
      * @param jsonString A json formatted string with the necessary delivery parameters (check the README.md for more info)
-     * @return An array with the deliveries' JSONObjects for later use
+     * @return An array with the deliveries' JSONObjects
      */
     /* private -> testing */ ArrayList<JSONObject> createListOfJSONObjects(String jsonString) {
         ArrayList<JSONObject> deliveryLabels = new ArrayList<>();
@@ -40,7 +41,7 @@ public class DeliveryLabelGeneratorController {
 
     /**
      * Convert a formatted String into a PDF
-     * @param orders Get an ArrayList of deliveries' JSONObjects
+     * @param orders Get an ArrayList of JSONObjects
      * @return a byteArray of the PDF
      */
     /* private -> testing */ byte[] createPDF(ArrayList<JSONObject> orders){

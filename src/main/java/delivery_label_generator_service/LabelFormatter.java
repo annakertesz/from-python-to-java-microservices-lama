@@ -5,7 +5,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 /**
- * Created by annakertesz on 1/4/17.
+ * @since   2017-01-03
  */
 public class LabelFormatter {
     String beginOfCode;

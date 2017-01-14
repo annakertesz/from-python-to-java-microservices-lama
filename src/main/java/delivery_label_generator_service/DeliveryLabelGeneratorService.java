@@ -7,7 +7,9 @@ import static spark.Spark.get;
 import static spark.Spark.port;
 
 /**
- * Created by cave on 2017.01.03..
+ * <h1>The API of the Label generator</h1>
+ *
+ * @since   2017-01-03
  */
 public class DeliveryLabelGeneratorService {
     private static final Logger logger = LoggerFactory.getLogger(DeliveryLabelGeneratorService.class);
@@ -16,7 +18,11 @@ public class DeliveryLabelGeneratorService {
 
     /**
      * The main method of the API
-     * @param args String array of the given program arguments
+     * @param args String array of the given program arguments.
+     * <b>Note:</b> Port must be given as the first argument.
+     * <h3>paths</h3>
+     *  <strong>/api/status</strong> - return the status of microservice
+     *  <strong>/api/create-label</strong> - return the generated pdf file
      */
     public static void main(String[] args) {
         logger.debug("Starting " + DeliveryLabelGeneratorService.class.getName() + "...");
